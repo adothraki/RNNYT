@@ -5,27 +5,14 @@
  */
 
 import React, { Component } from 'react';
-import {
-  AppRegistry,
-  StyleSheet,
-  Text,
-  View
-} from 'react-native';
+import { AppRegistry, StyleSheet, Text, View, Image } from 'react-native';
+import HomeScreen from './src/components/HomeScreen';
 
 export default class RNNYT extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.android.js
-        </Text>
-        <Text style={styles.instructions}>
-          Double tap R on your keyboard to reload,{'\n'}
-          Shake or press menu button for dev menu
-        </Text>
+        <Text>Hello World</Text>
       </View>
     );
   }
@@ -48,6 +35,10 @@ const styles = StyleSheet.create({
     color: '#333333',
     marginBottom: 5,
   },
+  image: {
+    height: 100,
+    justifyContent: 'flex-end'
+  }
 });
 
-AppRegistry.registerComponent('RNNYT', () => RNNYT);
+AppRegistry.registerComponent('RNNYT', () => HomeScreen);
