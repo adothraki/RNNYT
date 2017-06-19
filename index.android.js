@@ -6,7 +6,7 @@
 
 import React, { Component } from 'react';
 import { AppRegistry, StyleSheet, Text, View, Image } from 'react-native';
-import HomeScreen from './src/components/HomeScreen';
+import App from './src/App';
 
 export default class RNNYT extends Component {
   render() {
@@ -41,4 +41,4 @@ const styles = StyleSheet.create({
   }
 });
 
-AppRegistry.registerComponent('RNNYT', () => HomeScreen);
+AppRegistry.registerComponent('RNNYT', () => App);
